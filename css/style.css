@@ -4,6 +4,7 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 15px;
+  align-items: center;
 }
 i{
   color: white;
@@ -21,6 +22,7 @@ li{
   display: flex;
   list-style: none;
   font-size: 20px;
+  padding: 8px 12px;
 }
 .menuBar1 > li >a{
   font-weight: bold;
@@ -32,6 +34,7 @@ li{
 }
 .menuBar2 > li{
   margin-left: 40px;
+  padding: 8px 12px;
 }
 .menuBar2 > li:nth-child(1) {
   margin-left: 0px;
@@ -44,6 +47,9 @@ li{
   display: none;
   position: absolute;
   right: 35px;
+}
+.menuBar2 li:hover{
+  background: coral;
 }
 @media (max-width: 800px){
   .container{
@@ -61,8 +67,10 @@ li{
     font-size: 15px;
   }
   .menuBar2 > li{
+    width: 90vw;
     margin-top: 15px;
     margin-left: 0px;
+    text-align: center;
   }
   .menuBar3{
     display: flex;
