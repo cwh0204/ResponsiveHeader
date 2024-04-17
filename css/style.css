@@ -1,0 +1,85 @@
+.container{
+  background-color:#263343;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+}
+i{
+  color: white;
+  font-size: 20px;
+}
+a{
+  align-items: center;
+  color: white;
+  text-decoration-line: none;
+}
+li{
+  margin-left: 20px;
+}
+.menuBar1{
+  display: flex;
+  list-style: none;
+  font-size: 20px;
+}
+.menuBar1 > li >a{
+  font-weight: bold;
+}
+.menuBar2{
+  display: flex;
+  list-style: none;
+  font-size: 15px;
+}
+.menuBar2 > li{
+  margin-left: 40px;
+}
+.menuBar2 > li:nth-child(1) {
+  margin-left: 0px;
+}
+.menuBar3{
+  display: flex;
+  list-style: none;
+}
+.menuBarIconBox{
+  display: none;
+  position: absolute;
+  right: 35px;
+}
+@media (max-width: 800px){
+  .container{
+    background-color:#263343;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  .menuBar2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    font-size: 15px;
+  }
+  .menuBar2 > li{
+    margin-top: 15px;
+    margin-left: 0px;
+  }
+  .menuBar3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+  }
+  .menuBar3 > li{
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  .menuBarIconBox{
+    display: inline-block;
+    position: absolute;
+    right: 35px;
+  }
+  .menuBarIconBox > i{
+    color: coral;
+  }
+}
