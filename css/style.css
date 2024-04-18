@@ -56,11 +56,17 @@ li{
     background-color:#263343;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding: 15px;
+    align-items: start;
+  }
+  .menuBar1{
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    padding: 8px 12px;
   }
   .menuBar2{
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     list-style: none;
@@ -73,10 +79,11 @@ li{
     text-align: center;
   }
   .menuBar3{
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: center;
     list-style: none;
+    width: 100%;
   }
   .menuBar3 > li{
     margin-top: 15px;
@@ -90,4 +97,8 @@ li{
   .menuBarIconBox > i{
     color: coral;
   }
+  .menuBarShow{
+    display: flex;
+  }
+
 }
